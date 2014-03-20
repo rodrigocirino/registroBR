@@ -6,7 +6,7 @@
 
 
 //RegistrosBR--------------------------------------------------------
-	require "Avail.php";
+	require "php/Avail.php";
 	function check_domain_availability($fqdn, $parameters) {
 		$client = new AvailClient();
 		$client->setParam($parameters);
@@ -24,7 +24,7 @@
 //RegistrosBR--------------------------------------------------------
 	
 
-	$ponteiro = fopen ('./dominios.txt',"r");
+	$ponteiro = fopen ('./domain.txt',"r");
 	$dominios = array();//cria array
 
 	while (!feof ($ponteiro)) {
